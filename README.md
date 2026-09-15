@@ -21,3 +21,6 @@ A desktop application built in Java (Swing) & MySQL to manage student attendance
 
 ## 👩‍💻 Author
 Gayatri - https://github.com/gayatri02102003-star
+
+## 📸 Screenshot
+![Home Page](home.png)
