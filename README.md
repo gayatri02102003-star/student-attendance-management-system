@@ -1,26 +1,43 @@
-# Student Attendance Management System
+# Student Attendance Management System | Java, MySQL, Swing
 
-A desktop application built in Java (Swing) & MySQL to manage student attendance.
+A desktop application built in Java (Swing) & MySQL to manage student attendance efficiently. This system automates student records, daily attendance marking, and report generation.
 
-## ✨ Features
-- Add / Update / Delete Student
-- Mark Daily Attendance
-- View Attendance Report
-- Login System for Admin
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)
 
-## 🛠 Tech Stack
-- Java (NetBeans)
-- MySQL
-- JDBC
+### ✨ Features
+- **Student Management:** Add / Update / Delete Student Records
+- **Mark Attendance:** Mark daily attendance with date
+- **View Reports:** View attendance report student-wise and date-wise
+- **Admin Login:** Secure Login System for Admin
+- **User-Friendly UI:** Simple Swing-based interface
 
-## 🚀 How to Run
-1. Open project in NetBeans
-2. Create database `attendance_db` in MySQL
-3. Import the .sql file
-4. Run src/attendance/Main.java
+### 📸 Screenshots
 
-## 👩‍💻 Author
-Gayatri - https://github.com/gayatri02102003-star
+| Dashboard | Student List |
+| :---: | :---: |
+| ![Home](home.png) | ![Student List](student-list.png) |
+| **Mark Attendance** | **View Attendance** |
+| ![Mark Attendance](mark-attendance.png) | ![View Attendance](view-attendance.png) |
 
-## 📸 Screenshot
-![Home Page](home.png)
+### 🛠️ Tech Stack
+- **Frontend:** Java Swing (NetBeans)
+- **Backend:** Java
+- **Database:** MySQL
+- **Build Tool:** Ant (build.xml)
+
+### ⚙️ How to Run This Project
+
+**1. Prerequisites**
+- Install JDK 8 or above
+- Install MySQL Server
+- Install NetBeans IDE
+
+**2. Database Setup**
+- Create a database named `attendance_db` in MySQL
+- Import the SQL file (if available) or create tables: `student`, `attendance`, `admin`
+- Update DB credentials in `src/attendance/DBConnection.java`
+
+```java
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/attendance_db", "root", "your_password");
